@@ -1,0 +1,824 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 80%; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled] {
+  cursor: default; }
+
+input[disabled] {
+  cursor: default; }
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em; }
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, dl, dt, dd, figure, figcaption, button {
+  margin: 0;
+  padding: 0; }
+
+a img, :link img, :visited img, fieldset {
+  border: none; }
+
+address {
+  font-style: normal; }
+
+header, section, article, nav, footer, hgroup, details, summary, figure, main {
+  display: block; }
+
+mark {
+  color: inherit;
+  background: transparent; }
+
+abbr {
+  border: none; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+html, body, body > .app-content {
+  width: 100%;
+  height: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 16px;
+  font-size: 1.6em;
+  font-family: "Open Sans", sans-serif;
+  background: #efefef;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #eaeaea url(images/bg_tomster.png) no-repeat center 95%;
+  background-size: 230px 130px; }
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; }
+  @media screen and (max-width: 800px) {
+    .container {
+      width: 100%;
+      margin: 0 0;
+      -webkit-transition: all .5s ease-in-out;
+              transition: all .5s ease-in-out; } }
+
+body > .app-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch; }
+  body > .app-content > header {
+    background: #303030;
+    padding: 0 0 .5rem; }
+    body > .app-content > header .container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      box-sizing: border-box; }
+      @media screen and (max-width: 800px) {
+        body > .app-content > header .container {
+          padding: 0 1.5rem;
+          -webkit-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out; } }
+      body > .app-content > header .container h1 {
+        font-weight: normal; }
+        body > .app-content > header .container h1 a {
+          color: #e24b31;
+          font: 2.5rem "Pacifico", script; }
+          body > .app-content > header .container h1 a:hover {
+            color: #fa3a19;
+            -webkit-transition: color .5s;
+                    transition: color .5s; }
+          body > .app-content > header .container h1 a mark {
+            color: #f2f2f2;
+            font: 1.5rem "Open Sans", sans-serif;
+            display: inline-block;
+            padding: 1.5rem 0 0 .3rem;
+            vertical-align: top; }
+            body > .app-content > header .container h1 a mark:hover {
+              color: #ffffff;
+              -webkit-transition: color .5s;
+                      transition: color .5s; }
+      body > .app-content > header .container nav {
+        padding: 1rem 0;
+        box-sizing: border-box; }
+        body > .app-content > header .container nav a {
+          text-align: center;
+          display: inline-block;
+          background: #5b5b5b;
+          border-radius: 4rem;
+          padding: .3rem 1rem;
+          width: 3rem;
+          box-sizing: border-box; }
+          body > .app-content > header .container nav a + a {
+            margin-left: .5rem; }
+          body > .app-content > header .container nav a:hover {
+            background: #e24b31;
+            color: #ffffff;
+            -webkit-transition: color .5s, background .5s;
+                    transition: color .5s, background .5s; }
+
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+main {
+  font-size: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+  main #home ul.episodes {
+    margin: 2rem 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media screen and (max-width: 800px) {
+      main #home ul.episodes {
+        margin-top: 0;
+        display: block;
+        -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; } }
+    main #home ul.episodes li {
+      background: #fafafa;
+      border: 1px solid #dddddd;
+      border-radius: .5rem;
+      width: 49%;
+      margin: 0 0 2rem;
+      min-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap-reverse;
+          -ms-flex-flow: row wrap-reverse;
+              flex-flow: row wrap-reverse;
+      -webkit-box-align: baseline;
+      -webkit-align-items: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline; }
+      main #home ul.episodes li:hover {
+        background: #fff;
+        -webkit-transition: background .5s;
+                transition: background .5s; }
+      @media screen and (max-width: 800px) {
+        main #home ul.episodes li {
+          border: 0;
+          border-radius: 0;
+          margin-bottom: 0;
+          width: 100%;
+          -webkit-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out; }
+          main #home ul.episodes li + li {
+            border-top: 1px solid #dddddd; } }
+      main #home ul.episodes li a {
+        box-sizing: border-box; }
+        main #home ul.episodes li a.play {
+          padding: 2rem; }
+          main #home ul.episodes li a.play .play-button {
+            color: #ffffff;
+            font-size: 2rem;
+            text-align: center;
+            display: block;
+            background: #e24b31;
+            border-radius: 10rem;
+            padding: .5rem 1rem;
+            width: 4rem;
+            box-sizing: border-box;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 auto;
+                -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+            position: relative; }
+            main #home ul.episodes li a.play .play-button i.fa.fa-play {
+              padding-left: .3rem; }
+            main #home ul.episodes li a.play .play-button:before {
+              content: "";
+              border: 1px solid #e24b31;
+              border-radius: 5rem;
+              position: absolute;
+              top: -5px;
+              left: -5px;
+              right: -5px;
+              bottom: -5px; }
+          main #home ul.episodes li a.play:hover .play-button {
+            background: #ff320e;
+            -webkit-transition: background .5s;
+                    transition: background .5s; }
+            main #home ul.episodes li a.play:hover .play-button:before {
+              border-color: #ff320e;
+              -webkit-transition: border .5s;
+                      transition: border .5s; }
+        main #home ul.episodes li a.details {
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center;
+          padding: 2rem 2rem 2rem 0;
+          position: relative;
+          box-sizing: border-box;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
+          main #home ul.episodes li a.details h1 {
+            color: #e24b31;
+            font-size: 1.5rem;
+            padding-right: 2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+          main #home ul.episodes li a.details p {
+            color: #3f3f3f;
+            font-size: 1.2rem; }
+          main #home ul.episodes li a.details i.fa.fa-angle-right {
+            color: #afafaf;
+            font-size: 3rem;
+            position: absolute;
+            top: 28%;
+            right: 2rem; }
+          main #home ul.episodes li a.details:hover h1 {
+            color: #ff320e;
+            -webkit-transition: color .5s;
+                    transition: color .5s; }
+          main #home ul.episodes li a.details:hover p {
+            color: black;
+            -webkit-transition: color .5s;
+                    transition: color .5s; }
+          main #home ul.episodes li a.details:hover i.fa.fa-angle-right {
+            color: #969696; }
+  main #episode .wrapper {
+    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 800px) {
+      main #episode .wrapper {
+        overflow: auto;
+        -webkit-align-content: flex-start;
+            -ms-flex-line-pack: start;
+                align-content: flex-start;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; } }
+  main #episode .title {
+    background: #f2f2f2;
+    width: 20%;
+    min-height: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto; }
+    @media screen and (max-width: 800px) {
+      main #episode .title {
+        min-height: 0;
+        width: 100%;
+        -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; } }
+    main #episode .title .container {
+      text-align: center;
+      padding: 2.5rem 2rem 2rem; }
+      main #episode .title .container a.play .play-button {
+        color: #ffffff;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+        background: #e24b31;
+        border-radius: 10rem;
+        padding: .5rem 1rem;
+        width: 4rem;
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        position: relative;
+        margin: 0 auto 2rem; }
+        main #episode .title .container a.play .play-button i.fa.fa-play {
+          padding-left: .3rem; }
+        main #episode .title .container a.play .play-button:before {
+          content: "";
+          border: 1px solid #e24b31;
+          border-radius: 5rem;
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          right: -5px;
+          bottom: -5px; }
+      main #episode .title .container a.play:hover .play-button {
+        background: #ff320e;
+        -webkit-transition: background .5s;
+                transition: background .5s; }
+        main #episode .title .container a.play:hover .play-button:before {
+          border-color: #ff320e;
+          -webkit-transition: border .5s;
+                  transition: border .5s; }
+      main #episode .title .container h1 {
+        font-size: 1.6rem;
+        margin: 0 0 .5rem; }
+      main #episode .title .container p {
+        font-weight: 100;
+        font-size: 1.3rem; }
+  main #episode ul.sections {
+    border-left: 1px solid #ddd;
+    overflow: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+    @media screen and (max-width: 800px) {
+      main #episode ul.sections {
+        width: 100%;
+        -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; } }
+    main #episode ul.sections li {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      padding: 3rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      main #episode ul.sections li a.jump {
+        color: #fff;
+        font-size: 1.4rem;
+        text-align: center;
+        background: #e24b31;
+        height: 4.3rem;
+        padding: 1.2rem;
+        width: 6rem;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto; }
+        main #episode ul.sections li a.jump:hover {
+          background: #fa3a19;
+          -webkit-transition: color .5s;
+                  transition: color .5s; }
+      main #episode ul.sections li .details {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+        padding: 0 0 0 2rem; }
+        main #episode ul.sections li .details h1 {
+          font-size: 1.4rem; }
+          main #episode ul.sections li .details h1 a:hover {
+            color: #e24b31;
+            -webkit-transition: color .5s;
+                    transition: color .5s; }
+        main #episode ul.sections li .details p {
+          font-size: 1.4rem;
+          font-weight: 100; }
+          main #episode ul.sections li .details p a {
+            color: #e24b31; }
+            main #episode ul.sections li .details p a:hover {
+              color: #fa3a19;
+              -webkit-transition: color .5s;
+                      transition: color .5s; }
+      main #episode ul.sections li .description {
+        font-size: 1.3rem;
+        font-weight: 100;
+        padding: 2rem 0 0;
+        box-sizing: border-box; }
+        main #episode ul.sections li .description a {
+          color: #e24b31; }
+          main #episode ul.sections li .description a:hover {
+            color: #fa3a19;
+            -webkit-transition: color .5s;
+                    transition: color .5s; }
+        main #episode ul.sections li .description h2, main #episode ul.sections li .description h3, main #episode ul.sections li .description p, main #episode ul.sections li .description ul li {
+          margin: 0 0 1.4rem; }
+        main #episode ul.sections li .description h2 {
+          font-size: 1.4rem; }
+        main #episode ul.sections li .description h3 {
+          font-size: 1.3rem; }
+        main #episode ul.sections li .description ul {
+          margin: 0 0 0 2rem; }
+          main #episode ul.sections li .description ul li {
+            list-style: disc;
+            list-style-position: inside; }
+  main #about {
+    background: #fff;
+    padding: 2rem 0; }
+    @media screen and (max-width: 800px) {
+      main #about {
+        -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; }
+        main #about .container {
+          padding: 0 2rem; } }
+    main #about h1.ember-weekend {
+      background: url(images/logo-emberweekend.svg) no-repeat;
+      background-size: 175px 119px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 auto 2rem;
+      width: 175px;
+      height: 119px; }
+      main #about h1.ember-weekend + p {
+        font-weight: 100;
+        text-align: center;
+        margin: 0 0 2rem; }
+    main #about .wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0;
+      margin: 0 0 5rem; }
+      @media screen and (max-width: 800px) {
+        main #about .wrapper {
+          display: block;
+          -webkit-transition: all .5s ease-in-out;
+                  transition: all .5s ease-in-out; } }
+      main #about .wrapper dl {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        padding: 0 1.4rem;
+        width: 48%;
+        box-sizing: border-box; }
+        main #about .wrapper dl:first-of-type {
+          padding-right: 3rem; }
+        main #about .wrapper dl:last-of-type {
+          padding-left: 3rem; }
+        @media screen and (max-width: 800px) {
+          main #about .wrapper dl {
+            -webkit-box-flex: 0;
+            -webkit-flex: 0;
+                -ms-flex: 0;
+                    flex: 0;
+            padding: 0;
+            width: 100%;
+            -webkit-transition: all .5s ease-in-out;
+                    transition: all .5s ease-in-out; }
+            main #about .wrapper dl:first-of-type {
+              padding-right: 0; }
+            main #about .wrapper dl:last-of-type {
+              padding-left: 0; } }
+        main #about .wrapper dl dt {
+          position: relative; }
+          main #about .wrapper dl dt img {
+            -webkit-clip-path: circle(50px at center);
+                    clip-path: circle(50px at center);
+            display: block;
+            margin: 0 auto;
+            width: 110px;
+            height: 178px; }
+          main #about .wrapper dl dt a {
+            color: #fff;
+            font-size: 2rem;
+            text-align: center;
+            background: #55acee;
+            border-radius: 5rem;
+            padding: .5rem;
+            height: 3.5rem;
+            width: 3.5rem;
+            box-sizing: border-box;
+            position: absolute;
+            top: 10.8rem;
+            left: 56%; }
+            main #about .wrapper dl dt a:hover {
+              background: #42afff;
+              -webkit-transition: background .5s;
+                      transition: background .5s; }
+            @media screen and (max-width: 800px) {
+              main #about .wrapper dl dt a {
+                left: 50vw;
+                -webkit-transition: all .5s ease-in-out;
+                        transition: all .5s ease-in-out; } }
+          main #about .wrapper dl dt h1 {
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: -2.5rem 0 2rem; }
+        main #about .wrapper dl dd {
+          font-weight: 100;
+          font-size: 1.4rem;
+          line-height: 180%; }
+          main #about .wrapper dl dd p {
+            margin: 0 0 1.5rem; }
+    main #about h3 {
+      color: #939393;
+      font-weight: 100;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0 0 1.5rem; }
+    main #about ul.sponsor {
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 0 2rem; }
+      main #about ul.sponsor li {
+        display: inline-block;
+        text-align: center; }
+
+footer {
+  background: #fff;
+  border-top: 1px solid #d3d3d3;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box; }
+  footer .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 800px) {
+      footer .container {
+        padding: 0 1.5rem;
+        -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; } }
+    footer .container .controls {
+      font-size: 2rem;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid #494949;
+      border-radius: 5rem;
+      padding: .5rem 1rem;
+      margin: 2rem 0 1rem;
+      width: 4rem;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 4rem;
+          -ms-flex: 0 0 4rem;
+              flex: 0 0 4rem; }
+      footer .container .controls i.fa.fa-play {
+        padding-left: .3rem; }
+      footer .container .controls:hover {
+        color: #e24b31;
+        border-color: #e24b31;
+        -webkit-transition: color .5s, border .5s;
+                transition: color .5s, border .5s; }
+    footer .container a.episode-info {
+      color: #e24b31;
+      font-size: 1.3rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      vertical-align: top;
+      padding: 3rem 2.5rem 2rem .5rem;
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      box-sizing: border-box; }
+      footer .container a.episode-info time {
+        color: #303030;
+        font-weight: 400;
+        margin: 0 .5rem; }
+        footer .container a.episode-info time[datetime] {
+          color: #afafaf;
+          font-weight: 300;
+          margin: 0 .3rem; }
+      footer .container a.episode-info:hover {
+        color: #ff320e;
+        -webkit-transition: color .5s;
+                transition: color .5s; }
+        footer .container a.episode-info:hover time {
+          color: black;
+          -webkit-transition: color .5s;
+                  transition: color .5s; }
+  footer .progress-bar {
+    background: #e24b31;
+    height: .4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; }
+    footer .progress-bar .playhead {
+      background: #e24b31;
+      border: 1px solid #fff;
+      border-radius: 5rem;
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      left: 1rem;
+      top: -.75rem; }

@@ -1,13 +1,31 @@
 import Ember from 'ember';
 import moment from 'moment';
 
+let hasNativeAudio = (typeof Audio !== 'undefined');
+
+function extend(proto) {
+  function Ctor() { }
+  Ctor.prototype = proto;
+  return new Ctor();
+}
+
+class AudioWrapper {};
+
+if(hasNativeAudio){
+  AudioWrapper = Audio;
+}else{
+  AudioWrapper.prototype = extend({
+    addEventListener(){}
+  });
+}
+
 export default Ember.Service.extend({
   episode: null,
   title: Ember.computed.alias('episode.title'),
   releaseDate: Ember.computed.alias('episode.releaseDate'),
   playing: Ember.computed.alias('episode.playing'),
   audio: Ember.computed(function(){
-    var audio = new Audio();
+    var audio = new AudioWrapper();
     audio.addEventListener('timeupdate', () => {
       var seconds = parseInt(audio.currentTime, 10);
       this.set('currentTimeSeconds', seconds);
@@ -52,18 +70,19 @@ export default Ember.Service.extend({
     this.set('episode.playing', false);
   },
   currentTime: Ember.computed('currentTimeSeconds', function(){
-    var seconds = this.get('currentTimeSeconds');
-    if(Ember.$.isNumeric(seconds)){
-      var duration = moment.duration({seconds: seconds});
-      return moment.utc(duration.asMilliseconds()).format('mm:ss');
-    }else{
+    // var seconds = this.get('currentTimeSeconds');
+    // if(Ember.$.isNumeric(seconds)){
+    //   var duration = moment.duration({seconds: seconds});
+    //   return moment.utc(duration.asMilliseconds()).format('mm:ss');
+    // }else{
       return '--:--';
-    }
+    // }
   }),
   progress: Ember.computed('audio', 'currentTimeSeconds', function(){
     var duration = this.get('audio').duration || 0;
     var seconds = this.get('currentTimeSeconds');
     var percent = (seconds/duration) * 100;
-    return Ember.$.isNumeric(percent) ? percent : 0;
+    // return Ember.$.isNumeric(percent) ? percent : 0;
+    return 0;
   })
 });
