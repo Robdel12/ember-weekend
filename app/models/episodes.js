@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default [
   {
     number: 8,
@@ -10,7 +12,8 @@ export default [
     filename: "ep-8-ember-weekend",
     author: "Chase McCarthy & Jonathan Jackson",
     image: "https://i.imgur.com/XV0c9Xl.png",
-    duration: "13:47"
+    duration: "13:47",
+    stops: ['00:09', '01:52', '05:29', '07:26', '11:23']
   },
   {
     number: 7,
